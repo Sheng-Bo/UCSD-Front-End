@@ -1,0 +1,64 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Document
+
+        // CSS Style Block
+        style.
+            body {
+                background-color: pink;
+            }
+    body
+
+        // ----- Create tags and children tags with content -----
+        div.container
+            h1 Welcome to my site
+            p This is some sample text
+
+        .container
+            h1 Welcome to my site
+            p This is some sample text
+
+        |
+        |
+
+        // ----- Three Ways to Create Plain Text and Text Blocks -----
+        p Hello, world!
+
+        p
+            | This is some
+            | text on
+            | multiple lines.
+
+        p.
+            This is some <strong>unescaped</strong> text.
+            Here's another line with some <em>more HTML</em>.
+            And a final line to wrap things up.
+        |
+        |
+
+        // ----- Classes, IDs and Attributes -----
+        
+        // One Class
+        div.container
+        
+        // Multiple Classes
+        div.container.mb-1
+
+        // ID
+        div#header
+
+        // Multiple Attributes with Plain Text
+        a(href="https://www.example.com", target="_blank") Visit Example.com
+
+        |
+        |
+
+        // JavaScript Block
+        script.
+            $(document).ready(function() {
+                console.log('Ready!');
+            });
